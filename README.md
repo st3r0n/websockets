@@ -15,6 +15,7 @@ you can also send websocket requests to repeater from websocket history tab
  websocket vulns can leaad to SQLI XXE XSS SSRF etc
  eg --> messgae sent     {"message":"Hello Carlos"}
  rendered message   - -----> <td>Hello Carlos</td>
- so we add payload as     ------> #{"message":"<img src=1 onerror='alert(1)'>"}   -----> which can lead to xsss
+ so we add payload as     ------> #{"message":"<img src=1 o'nerror='alert(1)'>"}   -----> which can lead to xsss
 
  Manipulating the WebSocket handshake to exploit vulnerabilities
+ X-Forwarded-For: 1.1.1.1   ----> ti bypass ip restictions
