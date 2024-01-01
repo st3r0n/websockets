@@ -7,3 +7,5 @@ websockets are long lived where as HTTP connections are terminated for each requ
 Messages can be sent in either direction at any time and are not transactional in nature
 var ws = new WebSocket("wss://normal-website.com/chat");    ----> implementation of websocket WSS protocol is used
 the request and response look like JSON
+
+## manipulating WebSocket traffic
